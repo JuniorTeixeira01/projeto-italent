@@ -2,11 +2,19 @@ import lista  from "./data.js";
 
 const cards = document.querySelectorAll('.card');
 
-lista.map((item) =>{
-    console.log(item.id)
-    console.log(item.nome)
-    console.log(item.descricao)
+cards.forEach(card => function() {
+    let content = this.id;
 })
+
+lista.map((item) =>{
+   
+})
+
+const contentCards = (elemento) =>{
+    switch(elemento){
+        
+    }
+}
 
 
 
