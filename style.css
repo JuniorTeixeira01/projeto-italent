@@ -24,12 +24,12 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20PX;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 .container-infinity{
     background-color: #060126;
     border: 2px solid gray;
-    width: 1000px;
+    width: 3000px;
     height: 400px;
     display: flex;
     align-items: center;
@@ -59,4 +59,12 @@ button{
     width: 100px;
     height: 30px;
     border-radius: 5px;
+}
+
+.on-focus{
+    box-shadow: 0 0 0 5px rgb(77, 75, 75);
+    opacity: 1;
+}
+.off-focus{
+    opacity: 0.5;
 }

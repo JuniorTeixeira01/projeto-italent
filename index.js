@@ -1,30 +1,23 @@
-import lista  from "./data.js";
+import preenchDiv  from "./data.js";
+
+
+preenchDiv();
+
+
+let currentItem = 0;
 
 const cards = document.querySelectorAll('.card');
+const controls = document.querySelectorAll('button');
 
-cards.forEach(card => function() {
-    let content = this.id;
-})
-
-lista.map((item) =>{
-   
-})
-
-const contentCards = (elemento) =>{
-    switch(elemento){
-        
+controls.forEach(control => control.addEventListener('click', function() {
+    
+    if(control.classList.contains('is-right')){
+        currentItem++
+    }else{
+        currentItem > 0 && currentItem--
     }
-}
 
+    cards[currentItem].classList.remove('off-focus')
 
-
-
-
-/* <div className='listas'>
-                {selectClick.map((produto) =>
-                <ItemIngrediente 
-                key={produto.id}
-                nome={produto.nome}
-                imagem={produto.imagem}/>
-                )}
-            </div> */
+    console.log(currentItem)
+}))
